@@ -8,14 +8,15 @@ import com.pmdm.virgen.srodenas.tutorial.clasesbasicas.*
 import com.pmdm.virgen.srodenas.tutorial.funciones.devuelveSumaArray
 import com.pmdm.virgen.srodenas.tutorial.funciones.devuelveSumaArray2
 import com.pmdm.virgen.srodenas.tutorial.funciones.primeraFuncion
+import com.pmdm.virgen.srodenas.tutorial.lambda.Adapter
+import com.pmdm.virgen.srodenas.tutorial.lambda.Controller
 import com.pmdm.virgen.tutorial.clases.*
 import com.pmdm.virgen.tutorial.clases_internas.Calculadora
 import com.pmdm.virgen.tutorial.dataclases.Worker
 import com.pmdm.virgen.tutorial.herencia.*
 import com.pmdm.virgen.tutorial.interfaces.IntegranteSeleccionFutbol
 import com.pmdm.virgen.tutorial.interfaces.Jugador
-import com.pmdm.virgen.tutorial.lambda.lambda1
-import com.pmdm.virgen.tutorial.lambda.lambda2
+
 import java.util.Date
 import kotlin.concurrent.thread
 
@@ -39,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun pruebaMetodos() {
+
         //tipoDeDatos()
         //sentenciaIfElse()
         //sentenciaWhen()
@@ -59,8 +61,10 @@ class MainActivity : AppCompatActivity() {
         //dataClases()
        // probarTypeAlias()
         //probarLambda()
-        probarCallBack()
+       // probarCallBack()
+        emularListener()
     }
+
 
 
 
@@ -709,8 +713,7 @@ nested o inner class
 
 
     private fun probarLambda() {
-        lambda1()
-        lambda2()
+
     }
 
 
@@ -773,4 +776,8 @@ nested o inner class
         }
     }
 
+
+    private fun emularListener() {
+        val controller = Controller()
+    }
 }
